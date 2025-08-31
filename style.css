@@ -16,17 +16,11 @@ header{
 }
 
 header a{
-    text-decoration: none;
-    color: #ffffff;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    background-position: 0 100%;
-    transition: background-size 0.3s ease;
+    margin-top: 25px;
 }
 
 header a:hover{
-    background-size: 100% 2px;
+    text-decoration: underline;
 }
 
 .logo{

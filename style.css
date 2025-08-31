@@ -16,7 +16,17 @@ header{
 }
 
 header a{
-    margin-top: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    transition: background-size 0.3s ease;
+}
+
+header a:hover{
+    background-size: 100% 2px;
 }
 
 .logo{
@@ -37,4 +47,13 @@ img{
     width: 50px;
     height: 50px;
     margin-left: 10px;
+}
+
+#typewriter{
+    margin-left: 300px;
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 200;
+    width: 60px;
+    font-style:oblique;
 }

@@ -5,4 +5,21 @@
 
 body{
     background-color: #90A8BA;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-bar{
+    display: flex;
+    background-color: #94C7E2;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.nav-btn{
+    text-decoration: none;
+}
+
+img{
+    width: 85px;
+    height: 85px;
 }

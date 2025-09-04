@@ -16,11 +16,12 @@ header{
 }
 
 header a{
-    margin-top: 25px;
+  margin-top:30px;
+  color: #111;
 }
 
 header a:hover{
-    text-decoration: underline;
+  transform: scaleX(1.05);
 }
 
 .logo{

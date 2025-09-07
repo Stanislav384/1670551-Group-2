@@ -1,0 +1,56 @@
+main{
+    margin-top: 150px;
+}
+
+#habitSection {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+
+li {
+  list-style: none;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+li.completed label {
+  text-decoration: line-through;
+  color: green;
+}
+
+#progressContainer {
+  margin-top: 15px;
+  background: #ddd;
+  border-radius: 12px;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#progressBar {
+  background: #4caf50;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+input{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0);
+}
+
+button:hover{
+    transform: scale(1.05);
+}

@@ -4,17 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="habit.css">
     <title></title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./images/logo.png" alt="tasks">
-            <h2>NFS</h2>
-        </div>
-    </nav>
+  
+    <main>
+  <div class="calendar">
+    <div class="calendar-header">
+      <button id="prev">&lt;</button>
+      <h2 id="month-year"></h2>
+      <button id="next">&gt;</button>
+    </div>
+    <div class="calendar-body">
+      <div class="weekdays">
+        <div>Sun</div><div>Mon</div><div>Tue</div>
+        <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      </div>
+      <div class="days" id="days"></div>
+    </div>
+  </div>
+
+  <section id="habitSection">
+    <h3>Habits for <span id="modalDate"></span></h3>
+    <input type="text" id="newHabit" placeholder="Add new Habit">
+    <button id="addHabit">Add</button>
+    <ul id="habitList"></ul>
+    <div id="progressContainer">
+      <div id="progressBar"></div>
+      <span id="progressText"></span>
+    </div>
+  </section>
+</main>
 
 
-    <script src="script.js"></script>
+    <script src="calendar-habit.js"></script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center; /* центр и по вертикали, и по горизонтали */
+}
+
+
+section {
+  width: 300px;
+  height: 200px;
+}
+
+section h3{
+    text-align: center;
+}
+
+button{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0);
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+#taskList li {
+  background: #fff;
+  margin: 5px 0;
+  padding: 8px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.modal-win {
+  display: none; /* скрыто по умолчанию */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  z-index: 1000;
+}

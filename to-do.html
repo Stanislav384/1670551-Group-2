@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="to-do.css">
     <title></title>
 </head>
 <body>
-    <header>
-         <nav class="navbar">
-            <div class="logo">
-                <img src="./images/logo.png" alt="tasks">
-                <h2>NFS</h2>
-            </div>
-         </nav>
-    </header>
 
     <main>
     <div class="calendar">
@@ -34,6 +27,13 @@
     </div>
   </main>
 
-    <script src="script.js"></script>
+  <section id="taskModal" class="modal-win" style="display: none">
+    <h3>Add Task</h3>
+    <input type="text" id="newTask" placeholder="Add new Task">
+    <button id="addTask">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+    <script src="calendar-to-do.js"></script>
 </body>
 </html>

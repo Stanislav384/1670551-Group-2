@@ -14,7 +14,18 @@ main {
 
 header {
   text-align: center;
-  margin: 0 auto 20px;
+  margin-top: 30px;
+}
+
+header a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #111;
+  margin-top: auto;
+}
+
+header a:hover{
+  transform: scale(1.05);
 }
 
 li {

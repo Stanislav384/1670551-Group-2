@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="analyse.css">
     <title></title>
 </head>
 <body>
     <header>
-        <a href="index.html">
-        <img src="./images/logo.png">
-        </a>
+        <a href="index.html">Home</a>
     </header>
+
+  
+    <div class="progress">
+        <div class="switch-field">
+		<input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
+		<label for="radio-one">✓</label>
+		<input type="radio" id="radio-two" name="switch-one" value="no" />
+		<label for="radio-two">X</label>
+	</div>
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="done-to-do-habits">
+
+        </div>
+        <div id="undone-to-do-habits">
+
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>

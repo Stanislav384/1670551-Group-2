@@ -12,24 +12,34 @@
     </header>
 
   
-    <div class="progress">
-        <div class="switch-field">
-		<input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
-		<label for="radio-one">✓</label>
-		<input type="radio" id="radio-two" name="switch-one" value="no" />
-		<label for="radio-two">X</label>
-	</div>
-        <div id="progressContainer">
-            <div id="progressBar"></div>
-        </div>
+    <main id="analysisPage">
+  <h2>Productivity Analysis</h2>
 
-        <div id="done-to-do-habits">
-
-        </div>
-        <div id="undone-to-do-habits">
-
-        </div>
+  <!-- Анализ To-Do -->
+  <section>
+    <h3>To-Do Progress</h3>
+    <div class="progressContainer">
+      <div id="todoProgressBar"></div>
     </div>
+    <span id="todoProgressText"></span>
+  </section>
+
+  <!-- Анализ привычек -->
+  <section>
+    <h3>Habits Progress</h3>
+    <div class="progressContainer">
+      <div id="habitProgressBar"></div>
+    </div>
+    <span id="habitProgressText"></span>
+  </section>
+
+  <!-- Итог -->
+  <section id="recommendations">
+    <h3>Recommendations</h3>
+    <ul id="recommendationList"></ul>
+  </section>
+</main>
+
 
 
     <script src="script.js"></script>

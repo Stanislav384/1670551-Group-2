@@ -99,23 +99,24 @@ button:hover {
 }
 
 .modal-win {
-  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
+  transform: translate(-50%, -50%); /* всегда фиксированная позиция */
   background: #fff;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  text-align: center;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  display: none;
   opacity: 0;
+  scale: 0.8; /* отдельное свойство вместо transform */
+  transition: opacity 0.3s ease, scale 0.3s ease, visibility 0.3s;
 }
 
 .modal-win.active {
   display: block;
-  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
+  scale: 1; /* плавно увеличивается */
 }

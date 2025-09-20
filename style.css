@@ -1,54 +1,65 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: #90A8BA;
+body {
+    background-color: #ffffff; /* основной белый фон */
     font-family: "Inter", sans-serif;
+    color: #333;
 }
 
-header{
+header {
     display: flex;
-    background-color: #94C7E2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    
     height: 80px;
-    justify-content: space-around;
+    border-bottom: 2px solid #e0dfff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
-header a{
-  margin-top:30px;
-  color: #111;
-}
-
-header a:hover{
-  transform: scaleX(1.05);
-}
-
-.logo{
-    display: flex;
-    gap: 10px;
-    margin-top: 5px;
-}
-
-.logo h2{
-    margin-top: 17px;
-}
-
-.nav-btn{
+header a {
+    color: #111; /* фиолетовый акцент */
+    font-weight: 500;
     text-decoration: none;
+    margin-left: 20px;
+    transition: all 0.3s ease;
 }
 
-img{
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;
+header a:hover {
+    transform: scale(1.05);
+    color: #8c6fff;
 }
 
-#typewriter{
-    margin-left: 300px;
-    margin-top: 100px;
-    font-size: 30px;
-    font-weight: 200;
-    width: 60px;
-    font-style:oblique;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    color: #111;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#typewriter {
+    margin: 90px auto 0 auto;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: #111;
+    width: 50px; 
 }

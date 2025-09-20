@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calendar.css">
-    <link rel="stylesheet" href="habit.css">
-    <title>Habits</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calendar.css">
+  <link rel="stylesheet" href="habit.css">
+  <title>Habits</title>
 </head>
 <body>
   <header>
     <a href="index.html">Home</a>
   </header>
-    <main>
-  <div class="calendar">
-    <div class="calendar-header">
-      <button id="prev">&lt;</button>
-      <h2 id="month-year"></h2>
-      <button id="next">&gt;</button>
-    </div>
-    <div class="calendar-body">
-      <div class="weekdays">
-        <div>Sun</div><div>Mon</div><div>Tue</div>
-        <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+
+  <main>
+    <!-- Календарь -->
+    <div class="calendar">
+      <div class="calendar-header">
+        <button id="prev">&lt;</button>
+        <h2 id="month-year"></h2>
+        <button id="next">&gt;</button>
       </div>
-      <div class="days" id="days"></div>
+      <div class="calendar-body">
+        <div class="weekdays">
+          <div>Sun</div><div>Mon</div><div>Tue</div>
+          <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+        </div>
+        <div class="days" id="days"></div>
+      </div>
     </div>
-  </div>
 
-  <section id="habitSection">
-    <h3>Habits for <span id="modalDate"></span></h3>
-    <input type="text" id="newHabit" placeholder="Add new Habit">
-    <button id="addHabit">Add</button>
-    <ul id="habitList"></ul>
-    <div id="progressContainer">
-      <div id="progressBar"></div>
-      <span id="progressText"></span>
-    </div>
-  </section>
-</main>
+    <!-- Секция привычек -->
+    <section id="habitSection">
+      <h3>Habits for <span id="modalDate"></span></h3>
+      <input type="text" id="newHabit" placeholder="Add new Habit">
+      <button id="addHabit">Add</button>
+      <ul id="habitList"></ul>
+      <div id="progressContainer">
+        <div id="progressBar"></div>
+        <span id="progressText"></span>
+      </div>
+    </section>
+  </main>
 
-
-    <script src="calendar-habit.js"></script>
+  <script src="calendar-habit.js"></script>
 </body>
 </html>

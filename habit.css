@@ -7,6 +7,7 @@ main {
 #habitSection {
   margin-top: 20px;
   padding: 20px;
+  margin-right: 200px;
   border-radius: 16px;
   background: linear-gradient(145deg, #ffffff, #f5f5f5);
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
